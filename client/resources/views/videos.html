@@ -1,0 +1,23 @@
+<div class="row block-grid-v2" ng-controller="videoController">
+    <div class="col-md-4 col-sm-6 margin-bottom-30" ng-repeat="video in videosList">
+        <div class="easy-block-v1">
+            <video class="img-responsive" controls>
+                <source src="{{video.url}}" type="video/mp4">
+            </video>
+        </div>
+        <div class="block-grid-v2-info rounded-bottom">
+            <h3>
+                <a href="#/app/video/{{video._id}}">{{video.name}}</a>
+            </h3>
+            <p>{{video.description}}</p>
+            <!--<p>{{getShortDescription(video.description)}}</p>-->
+            <ul class="list-inline star-vote">
+                <li><i class="color-gold fa fa-star{{ getRating(video.ratings)<1 ? '-o' : ''}}"></i></li>
+                <li><i class="color-gold fa fa-star{{ getRating(video.ratings)<2 ? '-o' : ''}}"></i></li>
+                <li><i class="color-gold fa fa-star{{ getRating(video.ratings)<3 ? '-o' : ''}}"></i></li>
+                <li><i class="color-gold fa fa-star{{ getRating(video.ratings)<4 ? '-o' : ''}}"></i></li>
+                <li><i class="color-gold fa fa-star{{ getRating(video.ratings)<5 ? '-o' : ''}}"></i></li>
+            </ul>
+        </div>
+    </div>
+</div>

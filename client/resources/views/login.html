@@ -1,0 +1,32 @@
+<div class="login-container animated fadeInDown">
+
+    <div class="loginbox bg-white"  ng-controller="authController">
+        <div class="loginbox-title">Sign In</div>
+        <div class="loginbox-social">
+            <div class="social-title ">Please enter your username and password</div>
+        </div>
+
+        <div class="loginbox-textbox">
+                <span class="input-icon icon-right inverted">
+                    <input ng-model="username" type="text" class="form-control input-lg" placeholder="username">
+                    <i class="fa fa-user bg-sky"></i>
+                </span>
+        </div>
+        <div class="loginbox-textbox">
+                <span class="input-icon icon-right inverted">
+                    <input ng-model="password" type="password" class="form-control input-lg" placeholder="password">
+                    <i class="fa fa-lock bg-sky"></i>
+                </span>
+        </div>
+
+        <div class="loginbox-submit">
+            <button class="btn btn-sky btn-lg btn-block" ng-click="onSubmitForm();">
+                <i class="fa fa-key" />
+                Sign In
+            </button>
+        </div>
+        <alert type="danger" class="radius-bordered alert-shadowed" ng-show="formError">
+            {{formError}}
+        </alert>
+    </div>
+</div>

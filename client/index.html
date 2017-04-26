@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="videoPortalApp" >
+    <!-- Head -->
+    <head>
+        <meta charset="utf-8" />
+        <title page-title></title>
+
+        <meta name="description" content="blank page" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="shortcut icon" href="public/assets/img/favicon.png" type="image/x-icon">
+
+        <!--Basic Styles-->
+        <link href="public/assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="public/assets/css/vendor/font-awesome.min.css" rel="stylesheet">
+        <link href="public/assets/css/vendor/weather-icons.min.css" rel="stylesheet">
+        <link href="public/assets/css/vendor/real_state.css" rel="stylesheet">
+        <link href="public/assets/css/ui-notificacion.min.css" rel="stylesheet">
+        <link href="public/assets/css/block-ui.css" rel="stylesheet">
+
+      </style>
+        <link href="http://fonts.googleapis.com/earlyaccess/droidarabickufi.css" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300"
+              rel="stylesheet" type="text/css">
+
+        <!--Beyond styles-->
+        <link href="public/assets_beyond/css/beyond.css" rel="stylesheet" />
+        <link href="public/assets/css/animate.min.css" rel="stylesheet" />
+         <link rel="stylesheet" href="public/assets/css/main.css">
+
+    </head>
+    <!-- /Head -->
+
+    <!-- Body -->
+    <body>
+        
+        <div ui-view></div>
+
+        <!-- Scripts -->
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/jquery/bootstrap.js"></script>
+        <script src="lib/angular/angular.js"></script>
+
+        <script src="lib/utilities.js"></script>
+
+        <script src="vendor/lib/angular/angular-animate/angular-animate.js"></script>
+        <script src="vendor/lib/angular/angular-cookies/angular-cookies.js"></script>
+        <script src="vendor/lib/angular/angular-resource/angular-resource.js"></script>
+        <script src="vendor/lib/angular/angular-sanitize/angular-sanitize.js"></script>
+        <script src="vendor/lib/angular/angular-touch/angular-touch.js"></script>
+
+        <script src="vendor/lib/angular/angular-ui-router/angular-ui-router.js"></script>
+        <script src="vendor/lib/angular/angular-ocLazyLoad/ocLazyLoad.js"></script>
+        <script src="vendor/lib/angular/angular-ngStorage/ngStorage.js"></script>
+        <script src="vendor/lib/angular/angular-ui-utils/angular-ui-utils.js"></script>
+        <script src="vendor/lib/angular/angular-breadcrumb/angular-breadcrumb.js"></script>
+
+        <script src="lib/angular/angular-ui-bootstrap/ui-bootstrap.js"></script>
+        <script src="lib/jquery/slimscroll/jquery.slimscroll.js"></script>
+        <script src="public/assets/js/vendor/ng/ui-notification.min.js"></script>
+        <script src="public/assets/js/vendor/ng/block-ui.js"></script>
+        
+        <!-- App Config and Routing Scripts -->
+        <script src="app/app.js"></script>
+        <script src="app/config.videoPortal.js"></script>
+        <script src="app/config.js"></script>
+        <script src="app/config.lazyload.js"></script>
+        <script src="app/config.router.js"></script>
+        <script src="app/beyond.js"></script>
+
+        <!-- Helpers -->
+	    <script src="public/assets/js/crypto-js/crypto-js.js"></script>
+	    <script src="public/assets/js/crypto-js/md5.js"></script>
+
+        <script type="text/javascript" src="auth/authService.js"></script>
+        <script type="text/javascript" src="http/baseService.js"></script>
+        <script type="text/javascript" src="modules/user/userService.js"></script>
+        <script type="text/javascript" src="modules/user/userController.js"></script>
+        <!-- // <script type="text/javascript" src="modules/user/rolesController.js"></script> -->
+        <script type="text/javascript" src="auth/authController.js"></script>
+        <!--<script type="text/javascript" src="app/filters/customDate.js"></script>-->
+
+        <!-- Layout Related Directives -->
+        <script src="app/directives/loading.js"></script>
+        <!-- // <script src="app/directives/skin.js"></script> -->
+        <script src="app/directives/sidebar.js"></script>
+        <script src="app/directives/header.js"></script>
+        <script src="app/directives/navbar.js"></script>
+        <!-- // <script src="app/directives/chatbar.js"></script> -->
+        <!-- // <script src="app/directives/widget.js"></script> -->
+
+    </body>
+    <!--  /Body -->
+</html>

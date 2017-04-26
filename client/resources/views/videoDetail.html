@@ -1,0 +1,33 @@
+
+<div class="container" ng-controller="videoDetailController">
+
+
+  <div class="row">
+      <div class="col-md-12 text-center">
+          <h2>{{video.name}}</h2>
+      </div>
+      <div class="col-md-12">
+          <div class="text-center">
+              <video src="{{video.url}}" controls></video>
+          </div>
+      </div>
+      <div class="col-md-12">
+          <div class="row text-center">
+              <div class="col-md-12">
+                  <ul class="list-inline star-vote">
+                    <li><i class="color-gold fa fa-star{{ getRating(video.ratings)<1 ? '-o' : ''}}"></i></li>
+                    <li><i class="color-gold fa fa-star{{ getRating(video.ratings)<2 ? '-o' : ''}}"></i></li>
+                    <li><i class="color-gold fa fa-star{{ getRating(video.ratings)<3 ? '-o' : ''}}"></i></li>
+                    <li><i class="color-gold fa fa-star{{ getRating(video.ratings)<4 ? '-o' : ''}}"></i></li>
+                    <li><i class="color-gold fa fa-star{{ getRating(video.ratings)<5 ? '-o' : ''}}"></i></li>
+
+                  </ul>
+              </div>
+              <div class="col-md-12">
+                  {{video.description}}
+              </div>
+              
+          </div>
+      </div>
+  </div>
+</div>
